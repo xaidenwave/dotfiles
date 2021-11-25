@@ -51,7 +51,7 @@ fi
 xwallpaper --zoom $HOME/Pictures/Wallpapers/Wallpaper.jpg
 
 while true; do
-	xsetroot -name "  : [ $(ip address | grep -o -P '(?<=inet).*(?=/24)') ]  : [ $(pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,')% ]  : [ $(date +"%R%P") ]  : [ $(date +"%D") ] ";
+	xsetroot -name "  : [ $(pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,')% ]  : [ $(date +"%R%P") ]  : [ $(date +"%D") ] ";
 	sleep 1m;
 done &
 
