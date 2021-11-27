@@ -48,7 +48,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-xwallpaper --zoom $HOME/Pictures/Wallpapers/Wallpaper.jpg
+xwallpaper --zoom $HOME/Pictures/Wallpapers/0.jpg
 
 while true; do
 	xsetroot -name "  : [ $(pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,')% ]  : [ $(date +"%R%P") ]  : [ $(date +"%D") ] ";
