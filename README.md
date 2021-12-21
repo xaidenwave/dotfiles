@@ -40,7 +40,6 @@
 # drivers
 1) mesa
 2) lib32-mesa
-3) xf86-video-intel (For the DDX driver. Provides 2D acceleration in Xorg.)
-4) libva-intel-driver (Package for VA-API hardware acceleration.)
-5) vulkan-intel
-6) https://aur.archlinux.org/packages/cndrvcups-lb/ (Printer driver)
+3) libva-intel-driver (Package for VA-API hardware acceleration.)
+4) vulkan-intel
+5) https://aur.archlinux.org/packages/cndrvcups-lb/ (Printer driver)
