@@ -12,9 +12,8 @@ alias zrc="$EDITOR $HOME/.config/zsh/.zshrc"
 alias nf='neofetch'
 alias clc='rm -rf ~/.cache'
 alias zhist="$EDITOR $HOME/.config/zsh/.zsh-hist"
-alias vdwm="cd $HOME/.local/src/dwm-6.2/ && $EDITOR config.def.h"
-alias vst="cd $HOME/.local/src/st-0.8.4/ && $EDITOR config.def.h"
-alias suck="sudo cp config.def.h config.h && sudo make clean install"
+alias vdwm="cd $HOME/.local/src/dwm-6.2/ && $EDITOR config.h"
+alias vst="cd $HOME/.local/src/st-0.8.4/ && $EDITOR config.h"
 
 setopt autocd extendedglob nomatch menucomplete
 setopt interactive_comments
