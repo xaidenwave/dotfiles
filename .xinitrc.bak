@@ -48,15 +48,12 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-picom -f &
-
+picom &
 xwallpaper --center $HOME/Pictures/Wallpapers/Rose_red_abstract_flowers.jpg &
-
 while true; do
-	xsetroot -name " Vol: $( pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,' ) / $(date +"%R %p") / $(date +%F)"
+	xsetroot -name " Vol: $( pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,' )% / $(date +"%R %p") / $(date +%F)"
 	sleep 1m
 done &
-
 while true; do
 	dwm >/dev/null 2>&1
 done
