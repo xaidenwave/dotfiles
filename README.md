@@ -7,6 +7,9 @@
 1) ttf-fira-code
 2) ttf-cascadia-code
 3) noto-fonts-emoji
+4) ttf-joypixels
+5) Hack Nerd Font (https://aur.archlinux.org/nerd-fonts-hack.git)
+6) Inconsolata for powerline (https://aur.archlinux.org/otf-inconsolata-powerline-git.git)
 
 # display server & gui
 1) xorg-server
@@ -14,7 +17,7 @@
 3) xwallpaper
 4) xclip
 5) picom
-6) https://aur.archlinux.org/libxft-bgra.git (patched libxft)
+6) patched libxft (https://aur.archlinux.org/libxft-bgra.git)
 
 # softwares
 1) firefox
