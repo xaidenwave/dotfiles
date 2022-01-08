@@ -7,9 +7,10 @@
 1) ttf-fira-code
 2) ttf-cascadia-code
 3) noto-fonts-emoji
-4) ttf-joypixels
-5) Hack Nerd Font (https://aur.archlinux.org/nerd-fonts-hack.git)
-6) Inconsolata for powerline (https://aur.archlinux.org/otf-inconsolata-powerline-git.git)
+4) unicode-emoji
+5) ttf-joypixels
+6) Hack Nerd Font (https://aur.archlinux.org/nerd-fonts-hack.git)
+7) Inconsolata for powerline (https://aur.archlinux.org/otf-inconsolata-powerline-git.git)
 
 # display server & gui
 1) xorg-server
