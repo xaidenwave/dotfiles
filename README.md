@@ -35,8 +35,9 @@
 2) git
 3) htop
 4) neofetch
-5) cups (Printing)
-6) ghostscript (Printing)
+5) flameshot
+6) cups (Printing)
+7) ghostscript (Printing)
 
 # drivers (intel graphics)
 1) mesa
