@@ -4,5 +4,5 @@ static const Block blocks[] = {
 	{"",	"clock",	60,	1}
 };
 
-static char delim[] = " / ";
+static char delim[] = " ";
 static unsigned int delimLen = 5;
