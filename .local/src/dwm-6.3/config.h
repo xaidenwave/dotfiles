@@ -87,7 +87,6 @@ static Key keys[] = {
 	{ MODKEY,                       XK_F10,    spawn,          SHCMD("pactl set-sink-mute @DEFAULT_SINK@ toggle; pkill -RTMIN+10 dwmblocks") },
 	{ MODKEY|ShiftMask,		XK_b,      spawn,          {.v = firefox } },
 	{ MODKEY,                       XK_Print,  spawn,          SHCMD("flameshot gui") },
-	{ MODKEY,                       XK_F7,     spawn,          SHCMD("scrot -d 3") },
 };
 
 /* button definitions */
