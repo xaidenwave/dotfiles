@@ -1,0 +1,3 @@
+#!/bin/sh
+
+echo "🕛 $(date +%R%p) 📅 $(date +%d-%m-%y)"
