@@ -6,11 +6,9 @@
 # fonts
 1) ttf-fira-code
 2) ttf-cascadia-code
-3) noto-fonts-emoji
-4) unicode-emoji
-5) ttf-joypixels
-6) Hack Nerd Font (https://aur.archlinux.org/nerd-fonts-hack.git)
-7) Inconsolata for powerline (https://aur.archlinux.org/otf-inconsolata-powerline-git.git)
+3) ttf-joypixels
+4) Hack Nerd Font (https://aur.archlinux.org/nerd-fonts-hack.git)
+5) Inconsolata for powerline (https://aur.archlinux.org/otf-inconsolata-powerline-git.git)
 
 # display server & gui
 1) xorg-server
@@ -44,4 +42,4 @@
 1) mesa
 2) lib32-mesa
 3) vulkan-intel
-4) https://aur.archlinux.org/packages/cndrvcups-lb/ (Printer driver)
+4) https://aur.archlinux.org/packages/cnrdrvcups-lb/ & https://aur.archlinux.org/libjbig-shared.git (Printer driver)
