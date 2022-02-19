@@ -8,12 +8,13 @@ HISTFILE="$ZDOTDIR/.zsh-hist"
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias zrc="$EDITOR $HOME/.config/zsh/.zshrc"
+alias zrc="$EDITOR /.config/zsh/.zshrc"
 alias nf='neofetch'
 alias clc='rm -rf ~/.cache'
-alias zhist="$EDITOR $HOME/.config/zsh/.zsh-hist"
-alias vdwm="cd $HOME/.local/src/dwm-6.3/ && $EDITOR config.def.h"
-alias vst="cd $HOME/.local/src/st-0.8.5/ && $EDITOR config.def.h"
+alias zhist="$EDITOR ~/.config/zsh/.zsh-hist"
+alias vdwm="cd ~/.local/src/dwm-6.3/ && $EDITOR config.def.h"
+alias vst="cd ~/.local/src/st-0.8.5/ && $EDITOR config.def.h"
+alias vdwl="cd ~/.local/src/dwmblocks/ && $EDITOR blocks.def.h"
 
 setopt autocd extendedglob nomatch menucomplete
 setopt interactive_comments
@@ -33,6 +34,11 @@ bindkey -v
 autoload -z edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
+bindkey '^[[H' beginning-of-line
+bindkey '^[[4~' end-of-line
+bindkey '^[[1;5C' forward-word
+bindkey '^[[1;5D' backward-word
+bindkey '^[^?' backward-kill-word
 
 function zle-keymap-select {
   if [[ ${KEYMAP} == vicmd ]] ||
