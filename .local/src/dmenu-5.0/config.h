@@ -8,7 +8,6 @@ static const char *fonts[] = {
 	"JoyPixels:pixelsize=12:antialias=true:autohint=true"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
-
 #include "/home/sayon/.local/src/themes/colors-wal-dmenu.h"
 
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
