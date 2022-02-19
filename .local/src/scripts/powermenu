@@ -1,0 +1,15 @@
+#!/bin/sh
+
+function powermenu {
+	options=" Cancel\n PowerOff\n Reboot"
+	selected=$(echo -e $options | dmenu)
+	if [[ $selected = " PowerOff" ]]; then
+		doas poweroff
+	elif [[ $selected = " Reboot" ]]; then
+		doas reboot
+	elif [[ $selected = " Cancel" ]]; then
+		return
+	fi
+}
+
+powermenu

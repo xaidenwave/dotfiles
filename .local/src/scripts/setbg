@@ -1,0 +1,18 @@
+#!/bin/sh
+
+echo "Selecting a random wallpaper..."
+wall=$(find $HOME/Pictures/Wallpapers -type f | shuf -n 1)
+echo "Changing the wall..."
+xwallpaper --zoom $wall
+sed -i "/xwallpaper/c\ xwallpaper --zoom $wall &" $HOME/.xinitrc
+echo "Generating color schemes through pywal..."
+wal -i $wall >/dev/null
+sed -i 'N;$!P;D' $HOME/.cache/wal/colors-wal-dwm.h
+cp $HOME/.cache/wal/colors-wal-dwm.h $HOME/.local/src/themes/
+cp $HOME/.cache/wal/colors-wal-st.h $HOME/.local/src/themes/
+cp $HOME/.cache/wal/colors-wal-dmenu.h $HOME/.local/src/themes/
+echo "Recompiling DWM, ST and Dmenu with new theme..."
+cd $HOME/.local/src/dwm-6.3/ && doas make clean install
+cd $HOME/.local/src/st-0.8.5/ && doas make clean install
+cd $HOME/.local/src/dmenu-5.1/ && doas make clean install
+echo "Reboot for the new look!"
